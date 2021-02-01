@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<style>
+/* Styles for the "comments"/comments */
+
+/* Cosmetic CSS */
+body
+    {
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Trebuchet MS', arial, verdana, helvetica, georgia, 'Arial black', 'Courier New', 'Times New Roman', Times, sans-serif;
+    font-size: 100%;
+    line-height: 150%;
+    background-color: #EEEEEE; margin: 0em; padding: 0em;
+    }
+img.a { margin-right: 1em; margin-left: 2em; float: right }
+a {text-decoration: none; color:#0066CC;}
+a:hover {text-decoration: underline; color: red;}
+
+div.wholedoc
+    {
+    padding-top: 20px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px;
+    border-left: solid 1px #CCCCCC;
+    border-right: solid 1px #CCCCCC;
+    border-bottom: solid 1px #CCCCCC;
+    display: block;
+    width: 917px;
+    margin: 0px auto 0px auto;
+    background-color: #FFFFFF;
+    }
+h1
+	{
+	padding-top: 0px;
+	font-size: 500%;
+	}
+
+h2
+	{
+	padding-top: 24px;
+	font-size: 160%;
+	font-family: 'Georgia', 'Times New Roman', Times;
+	}
+h3
+    {
+    font-size: 120%;
+    }
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 170px;
+  background-color: #FFFFEE;
+  color: black;
+  font-size: 80%;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  border-style: outset;
+  padding: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  top: -5px;
+  right: 105%;
+}
+
+wrapper {
+    background-color:ghostwhite;
+    border:         1px solid darkgrey;
+	box-sizing:     border-box;
+}
+wrapper heading1 {
+	text-align:      center;
+    font-size:       2em;
+    font-family:     sans;
+    display:         block;
+    font-weight:     bold;
+	padding:         0.50em;
+    background-color:lightsteelblue;
+    background:      linear-gradient(to bottom, #AF6060, #FFA0A0);
+    color:           #7F0000;
+    text-shadow:     1px 1px 1px black;
+} 
+
+comment                          { background-color:snow; transition:background-color 0.75s;     }
+comment:nth-child(odd)           { background-color:whitesmoke;                                  }
+comment:not(:last-child)         { border-bottom:1px solid lavender;                             }
+comment photo                    { background-color:beige; border:1px solid black;               }    
+
+/* CSS for Layout */
+wrapper                          { overflow:auto; display:block;                                 }
+comments                         { display:block; overflow:auto;                                 }
+comment                          { display: block; overflow: auto; padding: 0.25em 0.25em;       }
+
+comment left, comment right      { overflow:visible; display: grid;                              }
+comment left                     { margin-right: 0.25em;                                         }
+comment right                    { margin-left:  0.25em;                                         }
+comment name, comment timestamp  { font-weight:bold;                                             }
+comment row                      { display:flex; justify-content:flex-start; align-items:center; }
+comment photo {
+	width:25px;	
+	text-align:center;
+    font-family:monospace;
+    font-size:32px;
+    padding:0.5em;
+	margin: 0.1em;
+	border-radius:50%;
+}
+</style>
+</head>
+<body>
+
+<div class="wholedoc">
+<img class="a" width="45%" style="padding-top: 30px;" src="ParanoiaMain.jpg"/>
+<h1>PARANOIA</h1>
+
+<p style="font-size:90%"><i><b>Note:</b> By Central Processing mandate 214.02.01.751, all citizens are required to bookmark this page to avoid unnecessary repetition of the decanting process.</i></p>
+
+<h2>Getting Started</h2>
+<ul>
+<li><a href="GameRules.html" target="_blank">Game Rules</a></li>
+<!--<li><a href="WelcomeTroubleshooter.html" target="_blank">Welcome, Lucky Troubleshooter!</a></li>-->
+</ul>
+
+<h2>About Your Clearance</h2>
+<p>The Computer has promoted you from your previous <b>INFRARED</b> Clearance to your new and exciting <span style="color: #C00000;"><b>RED</b></span> Clearance. Your new security clearance signifies The Computer’s benevolent trust in you. The Computer is your friend.</p>
+
+<h3>Your jumpsuit</h3>
+
+<p>All citizens are required to wear clothing of the same color as their security clearance. As an <b>INFRARED</b> you wore black. With your
+new <span style="color: #C00000;"><b>RED</b></span> Clearance The Computer has thoughtfully provided a new red jumpsuit and boots. Wear them at all times. Failure to comply is treason.</p>
+
+<p>(<b>EXCEPTION:</b> You may temporarily remove all or part of your clothing for hygienic purposes such as showering. Good hygiene is essential to good citizenship. Poor hygiene is insubordination.)</p>
+
+<img class="a" width="96%" style="padding-bottom:24px;" src="Clearances.jpg"/>
+
+<h3>Defer to citizens with higher clearance</h3>
+
+<p>The Computer determines each citizen’s clearance with complete impartiality. Higher clearance means greater responsibility; it also brings benefits. The Computer cares for the needs of all citizens, of course, but it rewards most greatly those who sacrifice the most for the sake of society and their fellow beings.</p>
+
+<p>Citizens of higher clearance are not necessarily more knowledgeable or capable than you. They have advanced solely because they selflessly served the greater good and earned The Computer’s trust. Admire, respect and defer to higher-clearance citizens. Failure to defer at all times is insubordination and may be treason.</p>
+
+<h3>Aspire to advance!</h3>
+
+<p>If you serve The Computer well, you will earn its greater trust and thereby advance in security clearance. Aspire to advance! Seek to serve Alpha Complex in ever greater ways! Failure to aspire may be considered insubordination.</p>
+
+<h3>Restricted areas</h3>
+
+<p>To ensure that only citizens of the requisite competence and trustworthiness have access to restricted areas, The Computer has divided Alpha Complex into colored areas. Citizens may only enter areas of their clearance or lower. You must stay within black (<b>INFRARED</b>) and <span style="color: #C00000;"><b>RED</b></span> areas at all times. Failure to do so is treason.</p>
+
+
+
+<h2>About Your Clones</h2>
+
+<p>Long ago, in Old Reckoning times before The Computer began guiding Alpha Complex&mdash;before Alpha Complex even existed!&mdash;humans
+once reproduced by rutting, like vile animals. Shudders and expressions of revulsion are permitted, though not mandatory.</p>
+
+<p>Because The Computer cares deeply for all citizens, it now grows them in clone tanks. This is much less messy and disgusting than the
+old way, and far less random. The Computer ensures every human citizen is genetically perfect in all respects. Improved by a program of mandatory hormone suppressants, human citizens are no longer troubled by the bestial urges of past generations.</p>
+
+<h3>Clone copies</h3>
+
+<p>The Computer’s researchers in R&amp;D continue to pioneer stunning advances in cloning technology. Earlier generations of citizens were grown in ‘clone families’ of six genetically identical siblings, all decanted from the tanks at the same time. When they died, their precious genetic heritage was lost to Alpha Complex. Today, thanks to advances in forced-growth cloning technology, The Computer’s loyal servants in Technical Services can now produce new clone copies of any citizen at will.</p>
+
+<h3>MemoMax technology</h3>
+
+<p>R&amp;D’s amazing MemoMax technology can copy and transfer the deceased citizen’s memories to a new clone with speed and absolute accuracy. Tech Services installed your MemoMax circuitry before you were decanted, and it functions perfectly today.</p>
+
+<h3>Priority cloning</h3>
+
+<p>The rare citizen of Alpha Complex who meets an untimely demise must sometimes wait for resources to become available to grow a new replacement body. In contrast, as a Troubleshooter you enjoy The Computer’s fullest consideration.</p>
+
+<p>Though you need not expect unusual hazards as you locate and terminate the last remaining vicious Communist enemies of Alpha Complex, The Computer has thoughtfully ordered for you five ready backup clones and a MemoMax Constant Realtime Update Priority link. The CRUP link ensures the highest priority for your return to action.</p>
+
+<!--<h3>Obtaining more clones</h3>
+<p>You may obtain more clone replacements, beyond the original five, from Tech Services at a regulated cost per set of six&mdash;though again, do not worry! Historically the number of Troubleshooters who have required more than five replacement clones is within acceptable margins, given prevalent situational circumstances.</p>-->
+
+<h2>Heroes</h2>
+
+<p>To maintain good order, The Computer has enlisted many loyal citizens like yourself. Those who serve with distinction are shining examples
+for all right-thinking people in Alpha Complex. In the ongoing ‘Heroes of Our Complex’ (HOOC) initiative The Computer periodically recognizes and honors meritorious individuals of all clearances. These lucky friends of The Computer see their smiling faces on evening vidshows, transtube loyalty posters and food containers.</p>
+
+<p>For example, this month’s HOOC honoree reduced waiting time by 22.3% on a perline basis in her PLC subsector warehouse routing office through the simple yet ingenious expedient of subdividing the single line for each security clearance into three separate alphabetical lines indexed by weekday and devising a schedule designating visiting days for each alphabetical segment of customers. For this HOOC-worthy innovation, congratulations to <span class="tooltip" style="background: black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tooltiptext"><b>NAME DELETED</b> per IntSec corrective order following discovery of treasonous history</span></span>.</p>
+
+<p>Serve The Computer well, and you too may join <span class="tooltip" style="background: black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tooltiptext"><b>NAME DELETED</b> per IntSec corrective order following discovery of treasonous history</span></span>!</p>
+
+<h2>Traitors</h2>
+
+<p>The Computer also attends regretfully to the pervasive presence of traitors. Traitors are everywhere! Though final crushing victory over Communist subversion is close at hand, the traitors’ last shrill treason-laden gasps still endanger their innocent victims. Fight on, Troubleshooter, fight on for The Computer and all Alpha Complex!</p>
+
+<h3>Mutants</h3>
+
+<p>Locate and apprehend or destroy <b>unregistered mutants</b>. They endanger human genetic purity and must be terminated or enlisted in our great
+cause.</p>
+
+<p>Do not terminate <i>registered mutants</i>, innocent citizens who realized they possess, through no fault of their own, a treasonous mutant power. These unwitting traitors promptly reported their power to The Computer. In its wisdom and benevolence, The Computer forgives those who make full confession, and it permits registered mutants to live. However, The Computer requires registered mutants to wear a uniform with yellow stripes at all times. (<span style="color: #AAAA00"><b>YELLOW</b></span> Clearance mutants wear a black-bordered yellow stripe.) Registered mutants are not subject to apprehension or termination when they use their powers. Encourage these former traitors to use their inhuman powers responsibly, for the good of all Alpha Complex, so they may someday overcome their unfortunate terrible stigma.</p>
+
+<h3>Secret societies</h3>
+
+<p>Locate and apprehend or destroy <b>members of secret societies</b>. They are traitors, often terrorists, and must be brought to justice.</p>
+
+<p>The existence of many secret societies is public knowledge. It is not technically illegal to discuss their treasonous doctrines and objectives, the better to enforce good order or promote greater sensitivity to danger. Remember, though, as a Troubleshooter you are The Computer’s trusted emissary. Discourage ordinary citizens from frivolously discussing these dangerous organizations.</p>
+
+<h3>Traitors are everywhere!</h3>
+
+<p>Due to past isolated incidents of lax security, unsupervised thoughts and poor hygiene, traitors have infiltrated Alpha Complex from the lowest to the highest levels. It may surprise you to learn traitors have even been identified on Troubleshooter teams like yours! Be vigilant in guarding against these rare but troubling incidents.</p>
+
+<p>Very soon The Computer will finally defeat the forces of Communism, terrorism and subversion and guarantee a loyal, stress-free Alpha Complex. With constant alertness and unwavering commitment you can help ensure freedom from worry for all citizens. The Computer is counting on you and your fellow Troubleshooters to help make this Year&nbsp;214 the last year you need ever worry about anything.</p>
+
+
+
+<h2>Social Networking</h2>
+
+<wrapper>
+  <heading1>Latest from HPD &amp; MC Friendship Network!</heading1>
+  <comments id="comments">
+    <template>
+      <comment>
+          <row>
+              <left>
+                  <photo>J</photo>
+              </left>
+              <right>
+                  <row>
+                  	<name>Elizabeth-O-EMZ-2</name>
+                    &nbsp;at&nbsp;
+                    <timestamp>214.01.24/13:35:41.8</timestamp>
+                  </row>
+                  <reply>Placeholder comment.</reply>
+              </right>
+          </row>
+      </comment>
+    </template>
+  </comments>
+</wrapper>
+
+</div>
+
+<script>
+var f_names = ["Michael", "Michael", "Michael", "Michael", "Michael", "Michael", "Michael", "Michael", "Michael", "Michael", "Michael", "Michael", "Michael", "Michael", "Michael", "Michael", "Michael", "Michael", "Michael", "Michael", "Michael", "Michael", "Michael", "Michael", "Michael", "Michael", "Michael", "Christopher", "Christopher", "Christopher", "Christopher", "Christopher", "Christopher", "Christopher", "Christopher", "Christopher", "Christopher", "Christopher", "Christopher", "Christopher", "Christopher", "Christopher", "Christopher", "Christopher", "Christopher", "Christopher", "Christopher", "Christopher", "Christopher", "Matthew", "Matthew", "Matthew", "Matthew", "Matthew", "Matthew", "Matthew", "Matthew", "Matthew", "Matthew", "Matthew", "Matthew", "Matthew", "Matthew", "Matthew", "Matthew", "Matthew", "Matthew", "Joshua", "Joshua", "Joshua", "Joshua", "Joshua", "Joshua", "Joshua", "Joshua", "Joshua", "Joshua", "Joshua", "Joshua", "Joshua", "Joshua", "Joshua", "Joshua", "David", "David", "David", "David", "David", "David", "David", "David", "David", "David", "David", "David", "David", "David", "David", "James", "James", "James", "James", "James", "James", "James", "James", "James", "James", "James", "James", "James", "James", "Daniel", "Daniel", "Daniel", "Daniel", "Daniel", "Daniel", "Daniel", "Daniel", "Daniel", "Daniel", "Daniel", "Daniel", "Daniel", "Daniel", "Robert", "Robert", "Robert", "Robert", "Robert", "Robert", "Robert", "Robert", "Robert", "Robert", "Robert", "Robert", "Robert", "John", "John", "John", "John", "John", "John", "John", "John", "John", "John", "John", "John", "John", "Joseph", "Joseph", "Joseph", "Joseph", "Joseph", "Joseph", "Joseph", "Joseph", "Joseph", "Joseph", "Joseph", "Joseph", "Jason", "Jason", "Jason", "Jason", "Jason", "Jason", "Jason", "Jason", "Jason", "Jason", "Jason", "Jason", "Justin", "Justin", "Justin", "Justin", "Justin", "Justin", "Justin", "Justin", "Justin", "Justin", "Justin", "Justin", "Andrew", "Andrew", "Andrew", "Andrew", "Andrew", "Andrew", "Andrew", "Andrew", "Andrew", "Andrew", "Andrew", "Ryan", "Ryan", "Ryan", "Ryan", "Ryan", "Ryan", "Ryan", "Ryan", "Ryan", "Ryan", "Ryan", "William", "William", "William", "William", "William", "William", "William", "William", "William", "William", "Brian", "Brian", "Brian", "Brian", "Brian", "Brian", "Brian", "Brian", "Brian", "Brandon", "Brandon", "Brandon", "Brandon", "Brandon", "Brandon", "Brandon", "Brandon", "Brandon", "Jonathan", "Jonathan", "Jonathan", "Jonathan", "Jonathan", "Jonathan", "Jonathan", "Jonathan", "Jonathan", "Nicholas", "Nicholas", "Nicholas", "Nicholas", "Nicholas", "Nicholas", "Nicholas", "Nicholas", "Nicholas", "Anthony", "Anthony", "Anthony", "Anthony", "Anthony", "Anthony", "Anthony", "Anthony", "Eric", "Eric", "Eric", "Eric", "Eric", "Eric", "Eric", "Eric", "Adam", "Adam", "Adam", "Adam", "Adam", "Adam", "Adam", "Adam", "Kevin", "Kevin", "Kevin", "Kevin", "Kevin", "Kevin", "Kevin", "Kevin", "Thomas", "Thomas", "Thomas", "Thomas", "Thomas", "Thomas", "Thomas", "Steven", "Steven", "Steven", "Steven", "Steven", "Steven", "Steven", "Timothy", "Timothy", "Timothy", "Timothy", "Timothy", "Timothy", "Timothy", "Richard", "Richard", "Richard", "Richard", "Richard", "Richard", "Jeremy", "Jeremy", "Jeremy", "Jeremy", "Jeremy", "Jeremy", "Jeffrey", "Jeffrey", "Jeffrey", "Jeffrey", "Jeffrey", "Jeffrey", "Kyle", "Kyle", "Kyle", "Kyle", "Kyle", "Kyle", "Benjamin", "Benjamin", "Benjamin", "Benjamin", "Benjamin", "Benjamin", "Aaron", "Aaron", "Aaron", "Aaron", "Aaron", "Aaron", "Charles", "Charles", "Charles", "Charles", "Charles", "Mark", "Mark", "Mark", "Mark", "Mark", "Jacob", "Jacob", "Jacob", "Jacob", "Jacob", "Stephen", "Stephen", "Stephen", "Stephen", "Stephen", "Patrick", "Patrick", "Patrick", "Patrick", "Scott", "Scott", "Scott", "Scott", "Nathan", "Nathan", "Nathan", "Nathan", "Paul", "Paul", "Paul", "Paul", "Sean", "Sean", "Sean", "Sean", "Travis", "Travis", "Travis", "Travis", "Zachary", "Zachary", "Zachary", "Zachary", "Dustin", "Dustin", "Dustin", "Dustin", "Gregory", "Gregory", "Gregory", "Gregory", "Kenneth", "Kenneth", "Kenneth", "Kenneth", "Jose", "Jose", "Jose", "Tyler", "Tyler", "Tyler", "Jesse", "Jesse", "Jesse", "Alexander", "Alexander", "Alexander", "Bryan", "Bryan", "Bryan", "Samuel", "Samuel", "Samuel", "Derek", "Derek", "Derek", "Bradley", "Bradley", "Bradley", "Chad", "Chad", "Chad", "Shawn", "Shawn", "Shawn", "Edward", "Edward", "Jared", "Jared", "Cody", "Cody", "Jordan", "Jordan", "Peter", "Peter", "Corey", "Corey", "Keith", "Keith", "Marcus", "Marcus", "Juan", "Juan", "Donald", "Donald", "Ronald", "Ronald", "George", "George", "Phillip", "Phillip", "Cory", "Cory", "Joel", "Joel", "Shane", "Shane", "Douglas", "Douglas", "Antonio", "Antonio", "Raymond", "Raymond", "Carlos", "Carlos", "Brett", "Brett", "Gary", "Gary", "Alex", "Alex", "Nathaniel", "Nathaniel", "Craig", "Craig", "Ian", "Ian", "Luis", "Derrick", "Erik", "Casey", "Philip", "Frank", "Evan", "Gabriel", "Victor", "Vincent", "Austin", "Brent", "Larry", "Seth", "Wesley", "Dennis", "Todd", "Christian", "Curtis", "Jeffery", "Randy", "Jeremiah", "Adrian", "Jesus", "Luke", "Alan", "Trevor", "Russell", "Mario", "Lucas", "Jerry", "Miguel", "Carl", "Blake", "Cameron", "Troy", "Mitchell", "Tony", "Shaun", "Terry", "Johnny", "Martin", "Ricardo", "Bobby", "Allen", "Johnathan", "Jorge", "Devin", "Andre", "Henry", "Billy", "Caleb", "Marc", "Garrett", "Ricky", "Francisco", "Kristopher", "Danny", "Manuel", "Lee", "Lawrence", "Jonathon", "Jimmy", "Lance", "Taylor", "Randall", "Micheal", "Mathew", "Albert", "Jamie", "Isaac", "Roger", "Rodney", "Roberto", "Jon", "Colin", "Walter", "Clinton", "Louis", "Clayton", "Willie", "Arthur", "Chase", "Joe", "Jack", "Jay", "Angel", "Calvin", "Ross", "Darren", "Oscar", "Drew", "Maurice", "Gerald", "Alejandro", "Spencer", "Hector", "Ruben", "Wayne", "Brendan", "Grant", "Javier", "Bruce", "Roy", "Dylan", "Logan", "Edwin", "Omar", "Brad", "Reginald", "Fernando", "Darrell", "Sergio", "Frederick", "Julian", "Jaime", "Jermaine", "Geoffrey", "Jessica", "Jessica", "Jessica", "Jessica", "Jessica", "Jessica", "Jessica", "Jessica", "Jessica", "Jessica", "Jessica", "Jessica", "Jessica", "Jessica", "Jessica", "Jessica", "Jessica", "Jessica", "Jessica", "Jessica", "Jessica", "Jessica", "Jessica", "Jessica", "Jessica", "Jennifer", "Jennifer", "Jennifer", "Jennifer", "Jennifer", "Jennifer", "Jennifer", "Jennifer", "Jennifer", "Jennifer", "Jennifer", "Jennifer", "Jennifer", "Jennifer", "Jennifer", "Jennifer", "Jennifer", "Jennifer", "Jennifer", "Jennifer", "Jennifer", "Jennifer", "Jennifer", "Jennifer", "Amanda", "Amanda", "Amanda", "Amanda", "Amanda", "Amanda", "Amanda", "Amanda", "Amanda", "Amanda", "Amanda", "Amanda", "Amanda", "Amanda", "Amanda", "Amanda", "Amanda", "Amanda", "Amanda", "Amanda", "Ashley", "Ashley", "Ashley", "Ashley", "Ashley", "Ashley", "Ashley", "Ashley", "Ashley", "Ashley", "Ashley", "Ashley", "Ashley", "Ashley", "Ashley", "Ashley", "Ashley", "Ashley", "Ashley", "Sarah", "Sarah", "Sarah", "Sarah", "Sarah", "Sarah", "Sarah", "Sarah", "Sarah", "Sarah", "Sarah", "Sarah", "Sarah", "Sarah", "Sarah", "Stephanie", "Stephanie", "Stephanie", "Stephanie", "Stephanie", "Stephanie", "Stephanie", "Stephanie", "Stephanie", "Stephanie", "Stephanie", "Stephanie", "Melissa", "Melissa", "Melissa", "Melissa", "Melissa", "Melissa", "Melissa", "Melissa", "Melissa", "Melissa", "Melissa", "Melissa", "Nicole", "Nicole", "Nicole", "Nicole", "Nicole", "Nicole", "Nicole", "Nicole", "Nicole", "Nicole", "Nicole", "Elizabeth", "Elizabeth", "Elizabeth", "Elizabeth", "Elizabeth", "Elizabeth", "Elizabeth", "Elizabeth", "Elizabeth", "Elizabeth", "Elizabeth", "Heather", "Heather", "Heather", "Heather", "Heather", "Heather", "Heather", "Heather", "Heather", "Heather", "Tiffany", "Tiffany", "Tiffany", "Tiffany", "Tiffany", "Tiffany", "Tiffany", "Tiffany", "Tiffany", "Michelle", "Michelle", "Michelle", "Michelle", "Michelle", "Michelle", "Michelle", "Michelle", "Amber", "Amber", "Amber", "Amber", "Amber", "Amber", "Amber", "Amber", "Megan", "Megan", "Megan", "Megan", "Megan", "Megan", "Megan", "Megan", "Amy", "Amy", "Amy", "Amy", "Amy", "Amy", "Amy", "Amy", "Rachel", "Rachel", "Rachel", "Rachel", "Rachel", "Rachel", "Rachel", "Rachel", "Kimberly", "Kimberly", "Kimberly", "Kimberly", "Kimberly", "Kimberly", "Kimberly", "Kimberly", "Christina", "Christina", "Christina", "Christina", "Christina", "Christina", "Christina", "Christina", "Lauren", "Lauren", "Lauren", "Lauren", "Lauren", "Lauren", "Lauren", "Lauren", "Crystal", "Crystal", "Crystal", "Crystal", "Crystal", "Crystal", "Crystal", "Crystal", "Brittany", "Brittany", "Brittany", "Brittany", "Brittany", "Brittany", "Brittany", "Brittany", "Rebecca", "Rebecca", "Rebecca", "Rebecca", "Rebecca", "Rebecca", "Rebecca", "Laura", "Laura", "Laura", "Laura", "Laura", "Laura", "Laura", "Danielle", "Danielle", "Danielle", "Danielle", "Danielle", "Danielle", "Danielle", "Emily", "Emily", "Emily", "Emily", "Emily", "Emily", "Emily", "Samantha", "Samantha", "Samantha", "Samantha", "Samantha", "Samantha", "Samantha", "Angela", "Angela", "Angela", "Angela", "Angela", "Angela", "Erin", "Erin", "Erin", "Erin", "Erin", "Erin", "Kelly", "Kelly", "Kelly", "Kelly", "Kelly", "Kelly", "Sara", "Sara", "Sara", "Sara", "Sara", "Sara", "Lisa", "Lisa", "Lisa", "Lisa", "Lisa", "Lisa", "Katherine", "Katherine", "Katherine", "Katherine", "Katherine", "Andrea", "Andrea", "Andrea", "Andrea", "Andrea", "Jamie", "Jamie", "Jamie", "Jamie", "Jamie", "Mary", "Mary", "Mary", "Mary", "Mary", "Erica", "Erica", "Erica", "Erica", "Erica", "Courtney", "Courtney", "Courtney", "Courtney", "Courtney", "Kristen", "Kristen", "Kristen", "Kristen", "Shannon", "Shannon", "Shannon", "Shannon", "April", "April", "April", "April", "Katie", "Katie", "Katie", "Katie", "Lindsey", "Lindsey", "Lindsey", "Lindsey", "Kristin", "Kristin", "Kristin", "Kristin", "Lindsay", "Lindsay", "Lindsay", "Lindsay", "Christine", "Christine", "Christine", "Christine", "Alicia", "Alicia", "Alicia", "Alicia", "Maria", "Maria", "Maria", "Maria", "Vanessa", "Vanessa", "Vanessa", "Vanessa", "Kathryn", "Kathryn", "Kathryn", "Allison", "Allison", "Allison", "Julie", "Julie", "Julie", "Anna", "Anna", "Anna", "Tara", "Tara", "Tara", "Kayla", "Kayla", "Kayla", "Natalie", "Natalie", "Natalie", "Victoria", "Victoria", "Victoria", "Monica", "Monica", "Monica", "Jacqueline", "Jacqueline", "Jacqueline", "Holly", "Holly", "Holly", "Kristina", "Kristina", "Patricia", "Patricia", "Cassandra", "Cassandra", "Brandy", "Brandy", "Whitney", "Whitney", "Chelsea", "Chelsea", "Brandi", "Brandi", "Catherine", "Catherine", "Cynthia", "Cynthia", "Kathleen", "Kathleen", "Veronica", "Veronica", "Leslie", "Leslie", "Natasha", "Natasha", "Krystal", "Krystal", "Stacy", "Stacy", "Diana", "Diana", "Erika", "Erika", "Dana", "Dana", "Jenna", "Jenna", "Meghan", "Meghan", "Carrie", "Carrie", "Leah", "Leah", "Melanie", "Melanie", "Brooke", "Brooke", "Karen", "Karen", "Alexandra", "Alexandra", "Valerie", "Valerie", "Caitlin", "Caitlin", "Julia", "Julia", "Jasmine", "Jasmine", "Alyssa", "Alyssa", "Hannah", "Hannah", "Stacey", "Stacey", "Brittney", "Brittney", "Susan", "Susan", "Margaret", "Margaret", "Sandra", "Sandra", "Candice", "Candice", "Latoya", "Latoya", "Bethany", "Bethany", "Misty", "Misty", "Katrina", "Katrina", "Tracy", "Tracy", "Casey", "Casey", "Kelsey", "Kelsey", "Kara", "Nichole", "Alison", "Heidi", "Alexis", "Molly", "Tina", "Pamela", "Rachael", "Nancy", "Jillian", "Candace", "Denise", "Sabrina", "Gina", "Renee", "Jill", "Kendra", "Morgan", "Brenda", "Monique", "Teresa", "Krista", "Linda", "Miranda", "Robin", "Dawn", "Kristy", "Theresa", "Tanya", "Wendy", "Melinda", "Joanna", "Anne", "Felicia", "Desiree", "Jaclyn", "Alisha", "Lori", "Tamara", "Marissa", "Kelli", "Lacey", "Abigail", "Christy", "Jenny", "Tabitha", "Colleen", "Meredith", "Barbara", "Angelica", "Carolyn", "Rebekah", "Ebony", "Deanna", "Tonya", "Caroline", "Kristi", "Kari", "Michele", "Brianna", "Bridget", "Angel", "Marie", "Sharon", "Sheena", "Tasha", "Meagan", "Jaime", "Cindy", "Priscilla", "Ann", "Ashlee", "Stefanie", "Cassie", "Adrienne", "Tammy", "Ana", "Beth", "Dominique", "Latasha", "Cristina", "Mallory", "Virginia", "Deborah", "Audrey", "Katelyn", "Regina", "Carla", "Cheryl", "Olivia", "Autumn", "Claudia", "Jordan", "Nina", "Taylor" 
+];
+var comments = shuffle([
+	"Don’t let on to the high-colors (they like you stupid) but these tips may keep you alive long enough to spend your first mission bonus. 74-222-48/B2:31:0E",
+    "IF YOU ARE READING THIS YOU ARE ALREADY COMPROMISED.",
+    "IntSec sniffers in the walls.",
+    "IntSec monitoring all transmissions of this text and receiver’s coordinates.",
+    "IntSec on your case is worse than bad Sandallathon. Ditch this readout, skip fast!",
+    "@William-O-MCZ-1: Hacked a sweetheart subroutine for IntSec sniffers, now logs bogus coordinates and UV clearance. Nobody smart checks them.",
+    "@Olivia-R-WBO-2: INTSEC PLANT DON’T TRUST HIM",
+    "@Cody-R-DCA-1: IT’S TRUE STOP READING THEY ARE ALREADY ON TO YOU",
+    "@Kristin-R-CNY-3: hey i know happy - probably did throw off intsec but he probably hacked this readout to steal your me card too watch out",
+    "@Alexander-O-WEK-6: Mike-U-5 and Mike-U-6 both led the revolt. Computer offed them both but needed ‘hero’.",
+    "Get truth in pamphlet Lies The Computer Taught Me and Make Credits Fast Through Multi-Clearance Marketing.",
+    "Wear Teela-O pin on left overall strap. We will contact you.",
+    "MIKE-U LIVES! Read first letter each sentence. Even Computer knows!",
+    "Mike-U-BCE-5 finest clone ever / tried to overthrow Comp & free us all / join PURGE keep Mike-U-5 memory alive!",
+    "I DREAMED I SAW MIKE-U LAST NIGHT",
+    "@Brian-G-SKY-1: This code obviously refers to Mike-U-BCE-6, heroic defender of Alpha Complex, not Mike-U-5, damnable heathen apostate. Memorialize true heroes!",
+    "Join First Church of Christ Computer Programmer, for The Computer maketh me to lie down in a soft haze of happiness.",
+    "Anyone who thinks putting an algae wafer on his tongue means he’s gonna get ‘saved’ and uploaded to The Computer’s databanks forever is a few bugs short of clean code.",
+    "Corpore Metal offers us a clean practical path to the next stage of evolution. Give up your meat!",
+    "@Ricardo-Y-GXR-4: Oh yes indeed, toddle off and live forever as a scrubot and forget the negligible achievements of Old Reckoning humanity: Amadeus MossHart, Frank Loyola Wright, Pikasso, World War II of the Rings, Microangelo, King Stephen, Currier Ives, The Cowsills.",
+    "@Michelle-O-IFB-4: One less uncultivated meatbrain merely makes life less stressful for Romantics who cherish our elevated past.",
+    "For a delightful taste of history, check the attached file, a profound and enigmatic text that evokes the magic of centuries past. It’s called Webmaster in a Nutshell.",
+    "@Andrew-O-ZMJ-3: oops think i deleted attachment. was hoping it told about new drugs.",
+    "anyone got venslimamine? leave under NE table in mess hall 242 vcj sector. leave contact info, will pay you 1000 credits twosday. --must go head hurts--",
+    "PROOF all the Mike-U family died long ago. Clone tank tech back then was bad, they decanted six copies at the same time and then NO MORE. No MemoMax, no reboots!",
+    "Cloning breakthroughs by PRO TECH are the only reason you can hope to live forever. GO PRO, BACK PRO TECH.",
+    "@Whitney-R-SBM-5: Live forever?  Like a Troubleshooter lives long enough to collect his first month's salary? Please!",
+    "@Stephanie-R-TTY-4: Newbie, you're vatslime unless you get higher clearance than your buddies, I mean enemies.",
+    "@Billy-R-WJC-2: Until you get nice GREEN reflec overalls you better have eyes in your shoulder blades.",
+    "@Nicole-R-WFI-4: Anyone with eyes anywhere but normal is a stinking MUTIE and Troubleshooters are right to shoot him!",
+    "Muties turned Mike-U-5. Muties killed Mike-U-6.",
+    "Muties have killed me four times already and I'm getting seriously annoyed.",
+    "MIKE-U IS A HOAX! Never existed!",
+    "See suppressed MS Proceedings of the Elders of the Brotherhood of Psion, taped under Reactor Bay 4 in Tevatron Central Radiation Chamber, CXK Sector. This will open your eyes!",
+    "@Chelsea-R-RGR-5: HPD & MC updates the Mike-U myth with every new Computer initiative.  When I got drafted into the T-Shooters Mike-U-5 was officially subverted by Outdoors radiation after Commies sabotaged his armor.",
+    "@Ana-O-MSD-6: Our team leader told me (just before I bumped him off, haha!) back when he was drafted, Mike-U-5 was getting corrupted by sinister secret society bureaucrats giving him fake drugs.",
+    "Hey newbies, if you get assigned to my team, lemme know the latest reason poor old Mike-U-5 went bad before I shoot you, OK?",
+    "Mike-U-6's corpse is still preserved on display as a hero of The Computer in an INDIGO mansion.  I know, I had to paint the thing with preservatives. After I got done the INDIGO had me declared a traitor and wiped my clone template.",
+    "I killed Mike-U-6, at least for a while. (Hope his new clone cost a bundle!) Now I'm in hiding and recruiting warriors for an ultimate battle. Stand at NHN Sector Effluent Intake 473 and hold a bag of algae chips by one corner between thumb and index finger.  I'll contact you.",
+    "@Robert-R-ZBY-1: dont go to secret revolutionary meeting INTERNAL SECURITY TRAP i nearly got caught and also lost my chips",
+    "@Michael-R-XEI-1: Always burn your team leader first before she burns you. Smash her PDC and plant Commie propaganda on the body so you won't get hit with the cost of her clone. Kill her five or six times and Tech will eventually wipe her template.",
+    "@Thomas-R-MSB-5: Only IntSec would tell lies so bald, spy! Sweat is truth!",
+    "Sweat trace is fake IntSec propaganda, just like RFID tags they conceal in your daily happy pills!",
+    "Fry RFID with new microwave gun, now avail from Free Enterprise, only",
+    "RFID TAGS ARE REAL DONT BELIEVE HIM THEYRE IN YU",
+    "@Jillian-R-OJO-2: NONONO never plant anything you touched, they trace your sweat chemicals. Instead use glove soaked in a mild solution of dilute Cold Fun.",
+    "@Kelli-Y-GEO-2: No they're not!", "@Seth-O-XJG-3: No way!", "@Jack-R-YYR-2 Nope.", "@Stephen-R-CZO-4: Seems legit.",
+    "@Sara-Y-ZWE-5: Absolutely.", "@Cristina-R-EUE-5: Yes they are!", "@Leslie-R-FWH-2 WTF?",
+    "@Richard-R-SQR-3: Get bots to plant evidence, they're stupid.",
+    "@Eric-O-AHF-4: Kill witnesses and smash their PDCs too!",
+    "ALWAYS get to debriefing ALONE! ONLY WAY! ONLY WAY!",
+    "Don't forget surveillan monitors! Disguised nowadays to look like",
+    "REAL T-shooters would destroy all bots, humanity's curse!",
+    "Don't tell anyone I told you this, but PLC forecasting predicts CBLK up 41% in the coming quarter get on this one quick before it goes up!",
+    "Tired of working for some one else??? No more! Be your own b0ss flex1ble hours up to 5000 credits per day. Message gunther@RED.book.armf.",
+    "MONEY JUST SITTING THERE WAITING FOR YOU. Go to our list of unclaimed credit disbursements at CPU@Refund.ent.",
+    "Free do.wn.lo.ad.s all your favorite Teela-O, others, ALL FOR FREE at 204-116-09/A0:FF:C1",
+    "inflation badger splinter effective 100% gu.ar.an.te.ed results! assert aminobenzoic octagon. Lock in your LOW LOW rate NOW! Message ginger@RED.uyt.cpu.",
+    "CLONES GONE WILD!!! 1000s of INFRAREDs getting crazy. When the hormone suppressants wear off you won't believe what happens next!!! MESSAGE Hottbot223 TO SEE",
+    "R o l a c t i n straight to your barrack! No PLC authorization needed, any clearance level, free shipping.  Message Lov@you.computer.",
+    "Message from IntSec: VIRUS DETECTED. If you are viewing this chat your PDC has been infected with a virus! To comply with virus-free use you must do.wn.lo.ad the latest fix from intsec.virus.check.biz.",
+    "Free seventh clone! Go to hdp.mc.cloning to claim your extra clone.  All new fileshare content AVAILABLE FOR FREE",
+    "IntSec sniffers are on your PDC.  GO TO peter.RED.wqr.plc TO ERASE THEM.",
+    "Add 50m to your laser's range. GO TO peter.RED.wqr.plc FOR MORE INFO.",
+    "WOW they have EVERYTHING Wakey-Wakey, QuietTime, you name it! LOWEST PRICES at 38-171-14/C5:A1:80.",
+    "I'll pay 250 license-free creds if you waste spammer Marco-G.  No need to contact me; actions speak louder than words.",
+    "@Carlos-O-OJV-4: When in doubt, bootlick!",
+    "@Jeffrey-R-ALU-2: ALWAYS tell the computer what it wants to hear.",
+    "@Dana-R-TEF-5: Treason is everywhere.  Always be the first on your team to root it out and destroy it.",
+    "@Kendra-R-RWA-3: I always have a few nice speeches prepared in case I need to bootlick for my life on short notice.",
+    "The Computer loves heroism.  Always volunteer your subordinates for heroic tasks!",
+    "@Lacey-O-ORK-4: Think of your team members as weapons aimed at your back.",
+    "@Marc-O-OIY-3: R&D is just looking for TEST DUMMIES! Get a pistol and get out fast.",
+    "Debriefings go so much better when you are the only survivor!",
+    "@Brandy-R-RVL-2: Sometimes the only way to survive is to stall.",
+    "@Ryan-O-EJK-2: Never do anything risky if you haven't prepared a scapegoat.",
+    "Boy, what I wouldn't give for a tacnuke right about now.",
+    "Praise a Vulture today!",
+    "True fans of Vulture Squadron always watch AFFN for exclusive live coverage of their missions.",
+    "Before going into battle, always make sure that your equipment has been checked by the tool and die workers of Stamped by Perfection Services.",
+    "Message Straight Shooters AF to join the Vulture Squadron today!",
+    "Buried in paperwork?  Enlist E-Z-Form for all of your form facilitation needs.",
+    "Did you know that a proper sign can be 72% effective in discouraging intruders?  Contact SSI-100 Emplacement to install a security sign anywhere in Alpha Complex.",
+    "Did a jammed gun kill your last clone? Buffed Bullets ammunition fresheners can keep your team's ammunition polished and clean.",
+    "Call the Happy Cheery People for immediate on-site therapy after a Vulture Squadron operation. Our sensitivity trainers can provide psychiatric adjustment to survivors before Goo Cleanup has even left the scene.",
+    "Need a quick Focus Group for your strategic product planning?  Call HerdEmUp Volunteer Supply for a group of INFRARED volunteers to perform any job you need done!",
+    "Message from the Values Preservation Society: Tomorrow at 0200 hours precisely, please be sure to hate the Commie mutant traitors who leaked green radioactive material into our B3 supplies. Please respond with a full description of your hatred towards these individuals; include names and clone numbers. Thank you.",
+    "Wreck things! Have fun! Cause trouble! Have fun! Mock the powerful! Have fun! DEATH LEOPARDS!!!",
+    "Human beings were not meant to live in burrows ruled by a queen bee.  We are not insects. Only by casting off the shackles of technology can we truly be happy.",
+    "My team leader Lisa-R-VCW-2 says that the revolution is coming.  The INFRARED masses will rise up!",
+    "@Joshua-R-YQD-5: Mandatory dyslexia screenings are usually fatal, but you'd have to be a moron to report yourself to Medical Services for reading slowly.",
+    "Alert: Jan-G-CCL-3 is a traitor! Terminate on sight.",
+    "@Deke-B-ORD-6: Please report immediately to the nearest termination center. Thank you!",
+    "@Vanessa-R-WII-5: Your service to The Computer shall be rewarded.",
+    "@Ian-O-ZKA-3: Remember, even the High Programmers began as INFRAREDs.",
+    "My team is heading OUTDOORS to pursue a Commie traitor. Is there anything we can do to ward off squirrel attacks?!?!",
+    "WHAT HAPPENED TO Q SECTOR? COMMIE BIOWEAPONS?",
+    "Clean quarters, clean mind. Cheap cleaning products of all kinds available on C-Bay.",
+    "Individually loyal. Stronger as one. Hundreds of small manufacturing firms selling their goods on C-Bay.",
+    "I have just been informed by The Computer that 2 + 2 = 5.31874613205.  All citizens are required to recalibrate their equipment accordingly.",
+    "teh computre is you’re freidn",
+    "Drink Bouncy Bubble Beverage: It’s the Mandatory Thing!",
+    "@Teresa-R-YFY-6: Shoot first, fill out accusation forms later.",
+    "Guilty conscience? For peace of mind, turn yourself in. 25-831-02/76:A3:D1",
+    "@Jessica-R-IMO-5: Well! Who got decanted from the wrong side of the clone tank this morning?",
+    "@Richard-R-OAR-4: Happy pills make happy citizens!",
+    "@Kristy-R-VPX-4: Smile! You don't know when Friend Computer is watching.",
+    "To all spammers: visit the termination center for an exciting new offer.",
+    "Who else is excited about the season premiere of That Show Trial Show this Fiveday?"
+]);
+
+var month = new Array();
+month[0] = "January";
+month[1] = "February";
+month[2] = "March";
+month[3] = "April";
+month[4] = "May";
+month[5] = "June";
+month[6] = "July";
+month[7] = "August";
+month[8] = "September";
+month[9] = "October";
+month[10] = "November";
+month[11] = "December";
+
+var commentnumber = 0;
+
+
+// @param   -- spintax. Required. String. A string of text marked up with spintax. 
+// @example -- run_spintax("{What is|what's} the deal with {airline food|the food they give you on airplanes}?")
+//    https://www.256kilobytes.com/content/show/1937/the-ultimate-guide-to-spintax-overview-formatting-and-running-spintax-in-google-sheets-and-javascript-in-general
+function run_spintax(spintax) { 
+
+  // Define a variable to store a REGEX that will match all spintax instances  
+  var regex = new RegExp(/{([^{}]+?)}/);
+
+  // Loop through all spintax instances  
+  while((to_spin = regex.exec(spintax)) !== null) { 
+    // Break the current spintax match from a string into an array split on the pipe character
+    opts = to_spin[1].split("|"); 
+
+    // Get a random option from the spintax options
+    random = Math.floor(Math.random() * opts.length); 
+
+    // Replace the full spintax string with the chosen option 
+    spintax = spintax.replace(to_spin[0], opts[random]); 
+  }
+  
+  return spintax;
+}
+
+function rand_between(min, max) { return Math.round(Math.random() * (max - min) ) + min; }
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+function load_new_comment() {
+	// Clone the template 
+    var temp = document.getElementsByTagName("template")[0];
+
+    // Set the new comment's attributes
+    var clearance_choice = [0, 0, 0, 0, 0, 1, 1, 1, 2,];
+    var clearance = clearance_choice[rand_between(0,8)];
+    var clearance_initials = ["R", "O", "Y", "G"];
+    sectors = ["A","B","C","D","E","F","G","H","I","K","L","M","N","O","P","R","S","T","U","V","W","X","Y","Z"]; // no J or Q
+    alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+    digits = ["1","2","3","4","5","6"];
+    var f_name = f_names[Math.floor(Math.random()*f_names.length)];
+ 	var name = f_name + "-" + clearance_initials[clearance] + "-" + sectors[rand_between(0,23)] + alphabet[rand_between(0,25)] + alphabet[rand_between(0,25)] + "-" + digits[rand_between(0,5)];
+    var clearance_letters = ["R", "O", "Y", "G"];
+
+	// ***** Handle the Timestamp ***** //
+	// That feel when you have to handle datetimes in JavaScript
+	var ts        = new Date();
+
+	// Convert from military time to AM/PM    
+	var hrs = ts.getHours();
+    var mins = ts.getMinutes();
+    var secs = ts.getSeconds();
+    msecs = Math.floor(ts.getMilliseconds()/100);
+    var day  = ts.getDate();
+    
+    // Fix leading zeroes
+    hrs  = (hrs <10?'0':'') + hrs ; 
+    mins = (mins<10?'0':'') + mins;
+    secs = (secs<10?'0':'') + secs;  
+    day  = (day <10?'0':'') + day;  
+    
+    // Create a human-readable string for the date 
+    // var sec = rand_between(0,59);
+    // sec = (sec <10?'0':'') + sec;
+    var timestamp = "214." + ts.getMonth()+1 + "." + day + "/" 
+                  + hrs + ":" + mins + ":" + secs + "." + msecs;
+
+	// Get a random comment 
+    var comment = comments[commentnumber];
+    commentnumber++;
+    if (commentnumber >= comments.length) {
+        commentnumber = 0;
+    }
+    
+    // If the comment has spintax markup in it, execute it here
+	var comment = run_spintax(comment); 
+
+	// Actually set the fields in the template with the data for the new comment 
+	temp.content.querySelector("name").textContent       = name;
+	temp.content.querySelector("timestamp").textContent  = timestamp;
+	temp.content.querySelector("photo").textContent      = clearance_letters[clearance];
+	temp.content.querySelector("reply").textContent      = comment;
+
+	// Generate random color pairs for the user letter icons  
+    // Similar to the method used here:
+    //    https://www.256kilobytes.com/content/show/494/php-how-to-generate-random-readable-background-and-text-color-pairs
+    var colors = [ [255,128,128], [255,192,128], [255,255,128], [128,255,128] ];
+    var colorchoice = colors[clearance];
+    var r = colorchoice[0];
+    var rt = r-128; 
+    var g = colorchoice[1]
+    var gt = g-128; 
+    var b = colorchoice[2];
+    var bt = b-128; 
+    var bg        = "rgba("+r +", "+g +", "+b +", 1.0)";
+    var txt       = "rgba("+rt+", "+gt+", "+bt+", 1.0)";
+    var bg_outer  = "rgba("+r+", "+g+", "+b+", 1.0)";
+    var bg_inner  = "rgba("+r+", "+g+", "+b+", 0.8)";    
+   
+    var bg_gradient = "radial-gradient("+bg_inner+", "+bg_outer+")";
+    temp.content.querySelector("photo").style.color           = txt;
+    temp.content.querySelector("photo").style.borderColor     = txt;
+    temp.content.querySelector("photo").style.backgroundColor = bg;
+    temp.content.querySelector("photo").style.background      = bg_gradient;
+
+	// Insert the new object
+    var clon = temp.content.cloneNode(true); 
+    var list = document.getElementById("comments");
+    list.insertBefore(clon, list.childNodes[0]);
+    if (list.childNodes.length > 18) {
+       list.removeChild(list.childNodes[14]);
+       list.removeChild(list.childNodes[14]);
+       list.removeChild(list.childNodes[14]);
+    }
+    setTimeout(load_new_comment, Math.floor(-12000*Math.log(Math.random())) );  // New post every 12 seconds on average
+}
+
+
+// Load in some comments initially 
+// for (var iii = 0; iii < 5; ++iii) 
+	load_new_comment();
+
+// Then load in new comments at random intervals 
+// setInterval(function(){
+//	load_new_comment();
+//}, Math.floor(-5000*Math.log(Math.random())) ); // average of 5 seconds
+
+</script>
+
+</body>
+</html>

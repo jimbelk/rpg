@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<HTML>
+
+
+<HEAD>
+<meta name="robots" content="noindex,nofollow" />
+<meta charset="UTF-8"/>
+<style type="text/css">
+
+body
+    {
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Trebuchet MS', arial, verdana, helvetica, georgia, 'Arial black', 'Courier New', 'Times New Roman', Times, sans-serif;
+    font-size: 100%;
+    line-height: 150%;
+    background-color: #EEEEEE; margin: 0em; padding: 0em;
+    }
+
+div.wholedoc
+    {
+    padding-top: 20px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px;
+    border-left: solid 1px #CCCCCC;
+    border-right: solid 1px #CCCCCC;
+    border-bottom: solid 1px #CCCCCC;
+    display: block;
+    width: 917px;
+    margin: 0px auto 0px auto;
+    background-color: #FFFFFF;
+    }
+img.computer {
+  display: block;
+  position: absolute;
+  padding-top: 0;
+  margin-left: 280px;
+  width: 357px;
+  animation: appearthendisappear 10s;
+  opacity: 0;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+  }
+h1 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+	text-align: center;
+	line-height: 0.2;
+	font-size:  1000%;
+	animation: appear 0s;
+	opacity: 0;
+	animation-delay: 20s;
+	animation-fill-mode: forwards;
+}
+h2 {
+	text-align: center;
+	line-height: 1.3;
+	font-size:  225%;
+	animation: appear 2s;
+	opacity: 0;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+h3 {
+	padding-top: 0px;
+	text-align: center;
+	line-height: 1;
+	font-size:  200%;
+}
+h4 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+	text-align: center;
+	line-height: 1;
+	font-size:  250%;
+	animation: appear 2s;
+	opacity: 0;
+	animation-delay: 16s;
+	animation-fill-mode: forwards;
+}
+div.end {
+    padding-top: 0px;
+    text-align: center;
+	animation: appear 4s;
+	opacity: 0;
+	animation-delay: 22s;
+	animation-fill-mode: forwards;
+}
+@keyframes appear {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes appearthendisappear {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    40% { opacity: 1; }
+    60% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+li {
+	padding-bottom: 12px;
+}
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+input {
+    font-size: 110%;
+}
+</style>
+
+<TITLE>WELCOME</TITLE>
+
+
+<script>
+    function startTimer(duration, display) {
+        var timer = duration, minutes, seconds;
+        var end = setInterval(function () {
+            seconds = parseInt(timer, 10);
+            seconds = seconds - 1;
+
+            seconds = seconds < 0 ? 0 : seconds;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            display.textContent = seconds;
+
+            if (--timer < 0) {
+                window.location = "SlowCompliance.html";
+                clearInterval(end);
+            }
+        }, 1000);
+    }
+
+    window.onload = function () {
+        var fortySeconds = 40,
+            display = document.querySelector('#time');
+        startTimer(fortySeconds, display);
+    };
+</script>
+
+</HEAD>
+
+<BODY link=darkblue vlink=darkblue>
+
+<div class="wholedoc">
+	<h3>WELCOME, CITIZEN, TO ALPHA COMPLEX.</h3>
+	
+<h2>WELCOME TO YEAR 214 OF THE COMPUTER.</h2>
+
+<img class="computer" src="FriendComputer.gif"/>
+
+
+<h4>WELCOME TO...</h4>
+
+<h1>PARANOIA</h1>
+
+<div class="end">
+<div style="display:inline-block;">
+<input type="button" onclick="location.href='index.html';" value="Click here" />
+</div>
+ to decant into Alpha Complex. You have <b><span id="time">40</span> seconds</b> to comply.</div>
+<form id="form1" runat="server">
+</form>
+
+<br>
+
+</div>
+
+</div>
+</BODY>
+</HTML>
