@@ -490,17 +490,20 @@ function load_new_comment() {
     var secs = ts.getSeconds();
     msecs = Math.floor(ts.getMilliseconds()/100);
     var day  = ts.getDate();
+    var month = ts.getMonth() + 1;
+
     
     // Fix leading zeroes
     hrs  = (hrs <10?'0':'') + hrs ; 
     mins = (mins<10?'0':'') + mins;
     secs = (secs<10?'0':'') + secs;  
-    day  = (day <10?'0':'') + day;  
+    day  = (day <10?'0':'') + day;
+    month  = (month <10?'0':'') + month;
     
     // Create a human-readable string for the date 
     // var sec = rand_between(0,59);
     // sec = (sec <10?'0':'') + sec;
-    var timestamp = "214." + ts.getMonth()+1 + "." + day + "/" 
+    var timestamp = "214." + month + "." + day + "/" 
                   + hrs + ":" + mins + ":" + secs + "." + msecs;
 
 	// Get a random comment 
