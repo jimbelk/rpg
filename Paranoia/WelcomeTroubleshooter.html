@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<HTML>
+
+
+<HEAD>
+<meta name="robots" content="noindex,nofollow" />
+<meta charset="UTF-8"/>
+<style type="text/css">
+
+body
+    {
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Trebuchet MS', arial, verdana, helvetica, georgia, 'Arial black', 'Courier New', 'Times New Roman', Times, sans-serif;
+    font-size: 100%;
+    line-height: 150%;
+    background-color: #EEEEEE; margin: 0em; padding: 0em;
+    }
+
+div.wholedoc
+    {
+    padding-top: 20px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px;
+    border-left: solid 1px #CCCCCC;
+    border-right: solid 1px #CCCCCC;
+    border-bottom: solid 1px #CCCCCC;
+    display: block;
+    width: 917px;
+    margin: 0px auto 0px auto;
+    background-color: #FFFFFF;
+    }
+
+img.a { margin-right: 1em; margin-left: 2em; float: right }
+a {text-decoration: none; color:#0066CC;}
+a:hover {text-decoration: underline; color: red;}
+
+img.friendcomputer { 
+  position: -webkit-sticky;
+  position: sticky;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  padding: 0px;
+}
+ }
+h2 {
+	padding-top: 36px;
+}
+h1 {
+	padding-bottom: 0;
+	font-size: 200%;
+}
+li {
+	padding-bottom: 12px;
+}
+.TOC-box-style {
+	border-collapse: collapse;
+	border: 1px solid #B0BDCC;
+}
+.TOC-style {
+	border-width: 0;
+	text-align: left;
+	font-family: "Lucida Sans Unicode";
+	background-color: #EFF4F9;
+}
+.TOC-link-style {
+	color: #003965;
+}
+.auto-style16 {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+div.readingtime {
+    font-size: 75%;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    padding-bottom: 4px;
+}
+</style>
+
+<script>
+    function startTimer(duration, display1, display2, display3, display4) {
+        var timer = duration, minutes, seconds;
+        var end = setInterval(function () {
+            seconds = parseInt(timer, 10);
+            seconds = seconds - 1;
+
+            seconds = seconds < 0 ? 0 : seconds;
+            seconds = seconds < 100 ? "0" + seconds : seconds;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+			if(--timer > 0) {
+                display2.textContent = seconds + " seconds";
+            } else {
+                display1.textContent = "";
+                display2.textContent = "";
+                display3.textContent = "";
+                display4.textContent = "ALLOTTED READING TIME EXCEEDED. PLEASE REPORT THIS INCIDENT TO YOUR SUPERVISOR TO UNDERGO MANDATORY READING EFFICIENCY TRAINING.";
+            clearInterval(end);
+            }
+        }, 1000);
+    }
+
+    window.onload = function () {
+        var twoHundredFiveSeconds = 205,
+            display1 = document.querySelector('#time1');
+            display2 = document.querySelector('#time2');
+            display3 = document.querySelector('#time3');
+            display4 = document.querySelector('#time4');
+        startTimer(twoHundredFiveSeconds, display1, display2, display3, display4);
+    };
+</script>
+
+
+<TITLE>Game Rules</TITLE>
+</HEAD>
+
+<BODY link=darkblue vlink=darkblue>
+
+<div class="wholedoc">
+	<h1>Welcome, Lucky Troubleshooter!</h1>
+
+    <h2 style="padding-top: 18px">Clearance: <span style="color: #C00000;">RED</span></h2>
+	
+	<p style="font-size: 75%; padding-top: 2px"><i>Orig 1.0 date 3.11.16/14:15:04.6</i></p>
+
+	<p style="font-size: 75%; padding-top: 2px"><i>Rev 843.7 211.06.30/22:56:09.1</i></p>
+	
+    <div class="readingtime"><p style="padding-top:2px; padding-bottom: 8px; border-bottom-style: solid"><i><span id="time1">Remaining reading time:</span><b><span id="time2">205 seconds</b><span id="time3">. Excessive reading time subject to disciplinary action under Central Processing mandate 214.05.06.835 ‘Improve Efficiency Through Reductions in Reading Time’.</span></i><b><span id="time4" style="color: #C00000; font-size:120%;"></span></b></p></div>
+
+<p style="padding-top: 0px"><span style="font-size: 110%;"><b>M</b></span>any Troubleshooters before you have loyally served Alpha Complex and The Computer. <span style="font-size: 110%"><b>I</b></span>t is now your honor to follow in their glorious struggle&mdash;stained with blood but never treason!&mdash;in helping The Computer achieve its imminent and inevitable victory over Communism.
+
+<p><span style="font-size: 110%"><b>K</b></span>eep the heroic sacrifices of your predecessors ever in mind. <span style="font-size: 110%;"><b>E</b></span>mulate their bravery against overwhelming odds. <span style="font-size: 110%"><b>U</b></span>se every bone and sinew, every drop of blood in your struggle, as they did. <span style="font-size: 110%"><b>L</b></span>et their ultimate immolation on the pyre of steadfast devotion be your example.</p>
+
+<p><span style="font-size: 110%"><b>I</b></span>t will be fun!</p>
+
+<h2><span style="font-size: 110%"><b>V</b></span>ictory is Near!</h2>
+
+<p><span style="font-size: 110%"><b>E</b></span>very Junior Citizen envies the exciting life of a Troubleshooter. <span style="font-size: 110%"><b>S</b></span>upporting The Computer’s ‘Great Complex’ initiative <span style="font-size: 75%"><i>(replaces completed Happiness Initiative ‘Trust Can Be Fatal’ per HPD&MC dispatch HPD211.06.25/25 rev 6, Clearance <span style="color: #C00000"><b>RED</b></span>)</i></span>, rooting out traitors and mutants, protecting helpless citizens from terror, corruption and subversion&mdash;this is more than the stuff of nightcycle vidshows. This is your high duty. This is why you are alive.</p>
+
+
+<img class="a" width="30%" src="ChestOfMedals.jpg">
+<h2>Born in Crisis, Tested Under Fire</h2>
+
+<p><span style="font-size: 110%"><b>N</b></span>o matter how many stories you’ve heard at your current or previous security clearance about Mike-U-BCE-5 and -6, the truth about these legendary High Programmers and the origin of the Troubleshooters is more wonderful still.</p>
+
+<p><span style="font-size: 110%"><b>O</b></span>riginally diligent INFRARED workers in the earliest years of The Computer, the Mike-BCE clone family earned The Computer’s trust, and Mike-BCE-5 and -6 both rose in clearance to the illustrious ranks of the High Programmers. <span style="font-size: 110%"><b>H</b></span>eed their example! <span style="font-size: 110%"><b>E</b></span>arn The Computer’s trust and you, too, may aspire to the highest service!</p>
+
+<p><span style="font-size: 110%"><b>D</b></span>uring his honorable early career, Mike-U-5 served The Computer loyally as Chief Supervisor of the Armed Forces. <span style="font-size: 110%"><b>O</b></span>nly after a dangerous mission into the Outdoors Sector did Mike-U-5 succumb to the traitorous influence of mutant mind control. <span style="font-size: 110%"><b>E</b></span>ven The Computer’s most trusted servants are always vulnerable, so be constantly alert!</p>
+
+<p><span style="font-size: 110%"><b>S</b></span>ubverted and compelled to commit treason, Mike-U-5 returned to Alpha Complex and foolishly attempted to lead the Armed Forces and Internal Security in an uprising against your friend The Computer.</p>
+
+<p><span style="font-size: 110%"><b>N</b></span>ot corrupted as his brother had been, Mike-U-6 put down the abortive uprising, but Mike-U-5 and certain renegade forces escaped The Computer’s justice. <span style="font-size: 110%"><b>T</b></span>he lingering threat of Mike-U-5 and the temporary reduction in the strength of Alpha Complex defenses led Mike-U-6 to propose to The Computer the formation of a new elite service unit, the Troubleshooters.</p>
+
+<p>Mike-U-BCE-6 led the Troubleshooters loyally on many missions in The Computer’s service. Ultimately he himself led the mission into Outdoors Sector to locate Mike-U-5. As you know from numerous vidshow adaptations, Mike-U-6 confronted his traitorous brother in a Communist stronghold and terminated him, but not before the treacherous brother mortally wounded the great High Programmer. The dying words of Mike-U-6 to his loyal Troubleshooters still hold true to this day: ‘Serve The Computer as it works to protect our Great Complex!’ <span style="font-size: 75%"><i>(Replaces and corrects previous last words per HPD&MC dispatch HPD211.06.25/25 rev 6, Clearance <span style="color: #C00000"><b>RED</b></span>)</i></span></p>
+
+<h2>Your High Purpose and Great Opportunity</h2>
+
+<p>The Computer has already shown its trust in you by promoting you to Security Clearance <span style="color: #C00000"><b>RED</b></span>. By recruiting you now to its elite Troubleshooter service unit, The Computer demonstrates its confidence that you can face any problem caused by any traitor in any sector of Alpha Complex. Total victory is now in sight. Do your part! Fulfill your mission! Serve The Computer and you will rise rapidly in its service.<p>
+
+<p>Beware! Traitors are everywhere! The safety of your fellow Troubleshooters and the security of Alpha Complex depend on you. Immediately report any treasonous or insubordinate behavior or any suspicion of treason or insubordination to The Computer. Failure to do so is treason.</p>
+
+<p>Some of your fellow Troubleshooters may serve The Computer as guardians of Internal Security. They are here to protect you. They diligently report every hint of treasonous or insubordinate behavior to The Computer. Rejoice to know any treason among your companions will be discovered and punished!</p>
+
+<p>You may be asked to test experimental equipment or perform vital services for your own or other service firms. Honor these simple requests, for they help The Computer protect and serve Alpha Complex!</p>
+
+<p>Your missions may take you to unfamiliar sections of Alpha Complex. The traitors you face may try to subvert you with unfamiliar and treasonous ideas. Be prepared! Know the enemy! Guard against treason!</p>
+
+<p>When you are troubled or uncertain, always remember the honorable legacy of the Troubleshooters who perished before you. Do as they did. Serve The Computer. The Computer is your friend.</p>
+
+</div>
+</BODY>
+</HTML>
